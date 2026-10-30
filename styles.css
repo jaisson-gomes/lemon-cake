@@ -1,0 +1,254 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #E8F7EE;
+  font-family: Arial, sans-serif;
+}
+
+main {
+  max-width: 750px;
+  margin: 0 auto;
+  padding: 30px 20px;
+}
+
+main ul {
+  padding-left: 10px;
+  list-style-type: none;
+}
+
+main li {
+  margin-bottom: 12px;
+  line-height: 1.6;
+}
+
+#navigation ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: #E8F7EE;
+  gap: 20px;
+  padding: 15px;
+  margin: 0;
+  border: 1px dashed green;
+  max-width: 90%;
+  margin: 20px auto;
+  list-style-type: none;
+  border-radius: 5px;
+}
+
+#navigation ul li a {
+  text-decoration: none;
+  color: #2e7d32;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+#navigation ul li a:hover {
+  color: #1b5e20;
+  text-decoration: underline;
+}
+
+
+#recipes {
+  font-family: sans-serif;
+  font-size: 36px;
+  background-color: green;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  font-weight: 800;
+  letter-spacing: 4px;
+  border-radius: 5px;
+}
+
+#recipes::before {
+  content: "🍋 ";
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 15px;
+}
+
+#recipes::after {
+  content: " \1F370";
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 15px;
+}
+
+.recipe-title {
+  font-size: 32px;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.linha {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: green;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+
+.recipe-description {
+  font-size: 18px;
+  color: black;
+  text-align: center;
+  margin: 20px auto;
+  max-width: 600px;
+}
+
+.recipe-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin: 20px auto;
+}
+
+.recipe-image
+  img {
+    max-width: 100%;
+    height: auto;
+    width: 500px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+#instructions, #ingredients, #glaze {
+  margin: 20px auto;
+  max-width: 600px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-size: 20px;
+  transition: all 0.3s ease;
+}
+
+#instructions:hover, #ingredients:hover, #glaze:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+
+.box {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.box li {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #E8F7EE;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-size: 20px;
+}
+
+.box p {
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+#nutrition, #tips, #variations {
+  margin: 20px auto;
+  max-width: 600px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  transition: all 0.3s ease;
+}
+
+#nutrition:hover, #tips:hover, #variations:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+#serving, #storage, #conclusion {
+  margin: 20px auto;
+  max-width: 600px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-size: 20px;
+  transition: all 0.3s ease;
+}
+
+#serving:hover, #storage:hover, #conclusion:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+#references {
+  margin: 20px auto;
+  max-width: 600px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-size: 20px;
+  transition: all 0.3s ease;
+}
+
+#references:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+#comments {
+  margin: 20px auto;
+  max-width: 600px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+#comments:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+#comments textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  resize: vertical;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+
+#comments button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+#comments button:hover {
+  background-color: #45a049;
+}
